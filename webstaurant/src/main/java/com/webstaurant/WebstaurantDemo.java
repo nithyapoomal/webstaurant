@@ -90,14 +90,16 @@ public class WebstaurantDemo {
 		System.out.println("The window name is :" + s1);
 		driver.switchTo().window(s1);
 		driver.findElement(By.xpath("//button[contains(text(),'Add To Cart')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.switchTo().window(s1);
 		driver.findElement(By.xpath("//a[contains(text(),'View Cart')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[contains(text(),'Empty Cart')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.switchTo().window(s1);
 		driver.findElement(By.xpath("//button[normalize-space()='Empty Cart']")).click();
+		Thread.sleep(2000);
+		driver.close();
 
 	}
 
