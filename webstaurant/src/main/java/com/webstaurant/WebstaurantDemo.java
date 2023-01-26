@@ -93,7 +93,7 @@ public class WebstaurantDemo {
 		Thread.sleep(2000);
 		driver.switchTo().window(s1);
 		driver.findElement(By.xpath("//a[contains(text(),'View Cart')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[contains(text(),'Empty Cart')]")).click();
 		Thread.sleep(2000);
 		driver.switchTo().window(s1);
